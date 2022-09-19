@@ -8,5 +8,5 @@
 - 📫 How to reach me: antaresmugisho@gmail.com
 - ⚡ Fun fact: We live We love We die
 
-![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/overview.svg)
-![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/languages.svg)
+![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/overview.svg#gh-dark-mode-only)
+![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/languages.svg#gh-dark-mode-only)
