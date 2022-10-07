@@ -1,12 +1,15 @@
-### Hi there 👋🏽
+Credits:
+	
+	This is an adaptation of Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-- 🔭 I’m currently working on a web project
-- 🌱 I’m currently performing my javascript
-- 👯 I’m looking to collaborate with anyone
-- 🤔 I’m looking for help
-- 💬 Ask me about python
-- 📫 How to reach me: antaresmugisho@gmail.com
-- ⚡ Fun fact: We live We love We die
+	Background Image:
+		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
+			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
 
-![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/overview.svg#gh-dark-mode-only)
-![](https://github.com/antaresmugisho/GithubStats/blob/master/generated/languages.svg#gh-dark-mode-only)
+	Icons:
+		Font Awesome (fontawesome.io)
+
+	Other:
+		Responsive Tools (github.com/ajlkn/responsive-tools)
