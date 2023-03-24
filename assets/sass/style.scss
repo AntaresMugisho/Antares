@@ -6,6 +6,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
 
+@font-face {
+	font-family: CreativeMind;
+	src: url(../webfonts/creative_mind.woff) format("woff");
+	src: url(../webfonts/creative_mind.woff2) format("woff2");
+}
+
 /*
 	Aerial by HTML5 UP
 	html5up.net | @ajlkn
@@ -386,6 +392,12 @@
 		width: 100%;
 		display: flex;
 		flex-direction: column;
+		
+		.creative-mind{
+			font-family: CreativeMind;
+			font-size: 2.125rem;
+			opacity:1;
+		}
 	}
 
 /* Wide */
@@ -483,18 +495,3 @@
 			}
 
 	}
-
-// Personnal styles
-// Footer
-@font-face {
-	font-family: CreativeMind;
-	src: url(../webfonts/creative_mind.woff) format("woff");
-	src: url(../webfonts/creative_mind.woff2) format("woff2");
-}
-
-.creative-mind{
-	font-family: CreativeMind;
-	font-size: 100px;
-	opacity:1;
-	color:red;
-}
