@@ -1,15 +1,24 @@
-Credits:
-	
-	This is an adaptation of Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Antares Mugisho – Portfolio
 
-	Background Image:
-		Ryan Schroeder via Unsplash (unsplash.com - CC0 licensed)
-			"Icefields" (flickr.com/photos/ryanschroeder/11876741703)
+This is my personal portfolio built with **React** and **TailwindCSS**. It showcases my projects, skills, and experience in a clean, single-page layout.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+## Features
 
-	Other:
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+- Dark & light mode (default: dark)
+- English & French support (default: English)
+- Tech stack section with logos
+- Projects grouped by category (Web, Mobile, Desktop)
+- Preview images, live links & GitHub code
+
+## Tech Stack
+
+React, TailwindCSS
+
+
+## Run Locally
+
+```bash
+git clone https://github.com/AntaresMugisho/antares.git
+cd antares
+npm install
+npm run dev
