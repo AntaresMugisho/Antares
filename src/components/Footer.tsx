@@ -17,20 +17,13 @@ export function Footer() {
           </div>
           
           <div className="text-center md:text-right">
-            <p className="text-sm text-muted-foreground mb-2">
-              © {currentYear} Antares Mugisho. {t('footer.rights')}
-            </p>
-            <p className="text-sm text-muted-foreground flex items-center justify-center md:justify-end space-x-1">
-              <span>{t('footer.built')}</span>
-              <Heart className="w-3 h-3 text-red-500 mx-1" />
-              <Code className="w-3 h-3 text-primary" />
-            </p>
+            <p className="text-white/10 text-center text-4xl" style={{fontFamily: 'Stay Classy'}}>•CreativeMind</p>
           </div>
         </div>
-        
+
         <div className="mt-8 pt-8 border-t border-border/20 text-center">
-          <p className="text-sm text-muted-foreground italic">
-            "We live We love We die !" - Antares
+          <p className="text-sm text-muted-foreground">
+          © 2020 - {currentYear} <span>• All rights reserved.</span>
           </p>
         </div>
       </div>

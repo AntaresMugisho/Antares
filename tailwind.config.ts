@@ -21,6 +21,7 @@ export default {
 			fontFamily: {
 				inter: ['Inter', 'sans-serif'],
 				mono: ['JetBrains Mono', 'monospace'],
+				'stay-classy': ['"Great Vibes"', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -74,21 +75,29 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
-				}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'fadeIn': {
+					'from': { opacity: '0' },
+					'to': { opacity: '1' },
+				},
+				'slideUp': {
+					'from': { transform: 'translateY(20px)', opacity: '0' },
+					'to': { transform: 'translateY(0)', opacity: '1' },
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' },
+				},
+				'pulseGlow': {
+					'0%, 100%': { boxShadow: '0 0 15px 0px hsl(var(--glow))' },
+					'50%': { boxShadow: '0 0 30px 5px hsl(var(--glow))' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -98,24 +107,6 @@ export default {
 				'float': 'float 3s ease-in-out infinite',
 				'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
 			},
-			keyframes: {
-				fadeIn: {
-					'0%': { opacity: '0', transform: 'translateY(20px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' },
-				},
-				slideUp: {
-					'0%': { opacity: '0', transform: 'translateY(40px)' },
-					'100%': { opacity: '1', transform: 'translateY(0)' },
-				},
-				float: {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' },
-				},
-				pulseGlow: {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(var(--primary) / 0.3)' },
-					'50%': { boxShadow: '0 0 40px hsl(var(--primary) / 0.5)' },
-				},
-			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],

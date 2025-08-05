@@ -54,7 +54,7 @@ const translations = {
     },
     projects: {
       title: 'Featured Projects',
-      subtitle: 'Showcasing My Work',
+      subtitle: 'Showcasing my work',
       categories: {
         all: 'All',
         web: 'Web Applications',
@@ -71,49 +71,46 @@ const translations = {
         fullstack: 'Full-Stack Developer',
         frontend: 'Frontend Developer',
         security: 'Security Developer',
-        mobile: 'Mobile Developer'
+        mobile: 'Mobile Developer',
+        backend: 'Backend Developer'
       },
       pyblade: {
         description: 'A lightweight, flexible template engine for Python inspired by Laravel\'s Blade syntax. Makes transitioning from Laravel to Django seamless.'
       },
       arIntercom: {
-        description: 'A networking project designed to enhance Python skills and network communication capabilities.'
+        description: 'A realtime chat application project that enhance enterprise communication between coworkers without the need of Internet connection.'
       },
-      albatros: {
-        description: 'Portfolio website for Albatros with modern design and responsive layout.'
-      },
-      weather: {
-        description: 'Daily weather report application providing real-time weather information.'
-      },
+
       hiking: {
         description: 'Collection of ethical hacking tools and cybersecurity scripts.'
       },
-      stockmanager: {
-        description: 'Simple real-time universal stock management system.'
-      },
+
       artrev: {
         description: 'Official website of Art Revolution, a digital & software agency specializing in modern web solutions and innovative digital experiences.'
       },
       avsd: {
-        description: 'Website for AVSD DRCongo, a non-profit organization focused on social development and community empowerment initiatives.'
+        description: 'Website for AVSD DRCongo, an NGO focused on social development and community empowerment initiatives.'
       },
       haction: {
-        description: 'Platform for Humanitarian Action Africa, supporting community development projects and humanitarian initiatives across the continent.'
+        description: 'Official website for Humanitarian Action Africa, a NGO supporting community development projects and humanitarian initiatives across the continent.'
       },
       albatdi: {
-        description: 'Corporate website for a consulting and professional development agency, offering strategic business solutions and training services.'
+        description: 'Portfolio website for Albatros Designer with modern design and responsive layout.'
       },
       ecd: {
         description: 'Educational portal focused on Early Childhood Development tools and services, providing resources for educators and parents.'
       },
       autafrika: {
-        description: 'Website for an African tech initiative in the automotive and mobility space, promoting innovation in transportation solutions.'
+        description: 'Website for an African tech startup in the automotive and mobility space, promoting innovation in transportation solutions.'
       },
       agroflex: {
         description: 'Landing page for the Agroflex mobile app, showcasing key features for agricultural management and farming optimization.'
       },
       modelshostesses: {
         description: 'A platform dedicated to showcasing and managing models and hostesses, connecting professionals with event organizers.'
+      },
+      cvau: {
+        description: 'A platform dedicated to manage loans and payments for a society specialized in loans and microfinance.'
       }
     },
     contact: {
@@ -199,49 +196,44 @@ const translations = {
         fullstack: 'Développeur Full-Stack',
         frontend: 'Développeur Frontend',
         security: 'Développeur Sécurité',
-        mobile: 'Développeur Mobile'
+        mobile: 'Développeur Mobile',
+        backend: 'Développeur Backend'
       },
       pyblade: {
-        description: 'Un moteur de template léger et flexible pour Python inspiré de la syntaxe Blade de Laravel. Facilite la transition de Laravel vers Django.'
+        description: "Un moteur de template léger et flexible pour Python, inspiré de la syntaxe Blade de Laravel. Facilite la transition de Laravel vers Django."
       },
       arIntercom: {
-        description: 'Un projet de réseau conçu pour améliorer les compétences Python et les capacités de communication réseau.'
-      },
-      albatros: {
-        description: 'Site web portfolio pour Albatros avec un design moderne et une mise en page responsive.'
-      },
-      weather: {
-        description: 'Application de rapport météo quotidien fournissant des informations météorologiques en temps réel.'
+        description: "Une application de chat en temps réel qui améliore la communication entre collègues en entreprise, sans besoin de connexion Internet."
       },
       hiking: {
-        description: 'Collection d\'outils de hacking éthique et de scripts de cybersécurité.'
-      },
-      stockmanager: {
-        description: 'Système de gestion de stock universel simple en temps réel.'
+        description: "Collection d'outils d'ethical hacking et de scripts de cybersécurité."
       },
       artrev: {
-        description: 'Site officiel d\'Art Revolution, une agence digitale et logicielle spécialisée dans les solutions web modernes et les expériences numériques innovantes.'
+        description: "Site officiel d'Art Revolution, une agence numérique et logicielle spécialisée dans les solutions web modernes et les expériences digitales innovantes."
       },
       avsd: {
-        description: 'Site web pour AVSD RDCongo, une organisation à but non lucratif axée sur le développement social et les initiatives d\'autonomisation communautaire.'
+        description: "Site web de AVSD DRCongo, une ONG axée sur le développement social et les initiatives d'autonomisation communautaire."
       },
       haction: {
-        description: 'Plateforme pour Humanitarian Action Africa, soutenant les projets de développement communautaire et les initiatives humanitaires à travers le continent.'
+        description: "Site officiel de Humanitarian Action Africa, une ONG soutenant des projets de développement communautaire et des initiatives humanitaires à travers le continent."
       },
       albatdi: {
-        description: 'Site corporatif pour une agence de conseil et de développement professionnel, offrant des solutions commerciales stratégiques et des services de formation.'
+        description: "Site portfolio d'Albatros Designer avec un design moderne et une mise en page responsive."
       },
       ecd: {
-        description: 'Portail éducatif axé sur les outils et services de développement de la petite enfance, fournissant des ressources pour les éducateurs et les parents.'
+        description: "Portail éducatif axé sur les outils et services pour le développement de la petite enfance, fournissant des ressources aux éducateurs et aux parents."
       },
       autafrika: {
-        description: 'Site web pour une initiative technologique africaine dans l\'espace automobile et de mobilité, promouvant l\'innovation en solutions de transport.'
+        description: "Site web d'une startup technologique africaine dans le domaine de l'automobile et de la mobilité, promouvant l'innovation dans les solutions de transport."
       },
       agroflex: {
-        description: 'Page d\'accueil pour l\'application mobile Agroflex, présentant les fonctionnalités clés pour la gestion agricole et l\'optimisation agricole.'
+        description: "Page de destination de l'application mobile Agroflex, présentant les fonctionnalités clés pour la gestion agricole et l'optimisation des exploitations."
       },
       modelshostesses: {
-        description: 'Une plateforme dédiée à la présentation et à la gestion de mannequins et d\'hôtesses, connectant les professionnels avec les organisateurs d\'événements.'
+        description: "Une plateforme dédiée à la présentation et à la gestion de modèles et d'hôtesses, mettant en relation les professionnels avec les organisateurs d'événements."
+      },
+      cvau: {
+        description: "Une plateforme dédiée à la gestion des prêts et des paiements pour une société spécialisée dans les prêts et la microfinance."
       }
     },
     contact: {

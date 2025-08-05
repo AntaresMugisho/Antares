@@ -9,7 +9,7 @@ interface Project {
   id: string
   name: string
   description: string
-  category: 'web' | 'mobile' | 'desktop' | 'security'
+  category: 'web' | 'mobile' | 'desktop' | 'security' | 'framework'
   technologies: string[]
   github?: string
   demo?: string
@@ -30,8 +30,8 @@ export function Projects() {
       id: 'pyblade',
       name: 'PyBlade',
       description: t('projects.pyblade.description'),
-      category: 'web',
-      technologies: ['Python', 'Django', 'Template Engine'],
+      category: 'framework',
+      technologies: ['Python', 'JavaScript'],
       github: 'https://github.com/AntaresMugisho/PyBlade',
       role: t('projects.roles.lead'),
       featured: true,
@@ -42,30 +42,7 @@ export function Projects() {
       name: 'AR Intercom',
       description: t('projects.arIntercom.description'),
       category: 'desktop',
-      technologies: ['Python', 'Networking', 'Socket Programming'],
-      github: 'https://github.com/AntaresMugisho/AR_Intercom',
-      role: t('projects.roles.fullstack'),
-      featured: true,
-      type: 'github'
-    },
-    {
-      id: 'albatros',
-      name: 'Albatros',
-      description: t('projects.albatros.description'),
-      category: 'web',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/AntaresMugisho/Albatros',
-      role: t('projects.roles.frontend'),
-      featured: true,
-      type: 'github'
-    },
-    {
-      id: 'weather',
-      name: 'Weather App',
-      description: t('projects.weather.description'),
-      category: 'web',
-      technologies: ['PHP', 'API Integration', 'CSS'],
-      github: 'https://github.com/AntaresMugisho/Weather',
+      technologies: ['Python', 'PyQT'],
       role: t('projects.roles.fullstack'),
       featured: true,
       type: 'github'
@@ -75,20 +52,9 @@ export function Projects() {
       name: 'HiKing',
       description: t('projects.hiking.description'),
       category: 'security',
-      technologies: ['Python', 'Cybersecurity', 'Ethical Hacking'],
+      technologies: ['Python'],
       github: 'https://github.com/AntaresMugisho/HiKing',
       role: t('projects.roles.security'),
-      featured: true,
-      type: 'github'
-    },
-    {
-      id: 'stockmanager',
-      name: 'Stock Manager',
-      description: t('projects.stockmanager.description'),
-      category: 'web',
-      technologies: ['PHP', 'MySQL', 'Real-time Updates'],
-      github: 'https://github.com/AntaresMugisho/StockManager',
-      role: t('projects.roles.fullstack'),
       featured: true,
       type: 'github'
     }
@@ -101,7 +67,7 @@ export function Projects() {
       name: 'Art Revolution',
       description: t('projects.artrev.description'),
       category: 'web',
-      technologies: ['React', 'TailwindCSS', 'Modern Design'],
+      technologies: ['PHP', 'Laravel'],
       demo: 'https://artrev.net',
       role: t('projects.roles.fullstack'),
       featured: true,
@@ -109,10 +75,10 @@ export function Projects() {
     },
     {
       id: 'avsd',
-      name: 'AVSD DRCongo',
+      name: 'AVSD DR Congo',
       description: t('projects.avsd.description'),
       category: 'web',
-      technologies: ['WordPress', 'PHP', 'MySQL'],
+      technologies: ['PHP', 'Laravel'],
       demo: 'https://avsd-drcongo.org',
       role: t('projects.roles.fullstack'),
       featured: true,
@@ -120,32 +86,32 @@ export function Projects() {
     },
     {
       id: 'haction',
-      name: 'Humanitarian Action Africa',
+      name: 'Humanitarian Action for Africa',
       description: t('projects.haction.description'),
       category: 'web',
-      technologies: ['React', 'Node.js', 'MongoDB'],
+      technologies: ['Next.js', 'Laravel'],
       demo: 'https://h-action-africa.org',
-      role: t('projects.roles.fullstack'),
+      role: t('projects.roles.backend'),
       featured: true,
       type: 'manual'
     },
     {
       id: 'albatdi',
-      name: 'Albatdi Consulting',
+      name: 'Albatros Design',
       description: t('projects.albatdi.description'),
       category: 'web',
-      technologies: ['Laravel', 'Vue.js', 'MySQL'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       demo: 'https://albatdi.com',
-      role: t('projects.roles.fullstack'),
+      role: t('projects.roles.frontend'),
       featured: true,
       type: 'manual'
     },
     {
       id: 'ecd',
-      name: 'Early Childhood Development',
+      name: 'Eglise Compassion Divine',
       description: t('projects.ecd.description'),
       category: 'web',
-      technologies: ['React', 'Django', 'PostgreSQL'],
+      technologies: ['HTML', 'CSS', 'PHP'],
       demo: 'https://ecd.artrev.net',
       role: t('projects.roles.fullstack'),
       featured: true,
@@ -153,10 +119,10 @@ export function Projects() {
     },
     {
       id: 'autafrika',
-      name: 'AutAfrika',
+      name: 'Autafrika',
       description: t('projects.autafrika.description'),
       category: 'web',
-      technologies: ['React Native', 'Node.js', 'MongoDB'],
+      technologies: ["Laravel"],
       demo: 'https://autafrika.com',
       role: t('projects.roles.fullstack'),
       featured: true,
@@ -167,7 +133,7 @@ export function Projects() {
       name: 'Agroflex',
       description: t('projects.agroflex.description'),
       category: 'mobile',
-      technologies: ['React Native', 'Firebase', 'Node.js'],
+      technologies: ['React Native', 'Django'],
       demo: 'https://agroflex.vercel.app',
       download: 'https://agroflex.vercel.app',
       role: t('projects.roles.mobile'),
@@ -179,15 +145,25 @@ export function Projects() {
       name: 'Models & Hostesses',
       description: t('projects.modelshostesses.description'),
       category: 'web',
-      technologies: ['PHP', 'Laravel', 'MySQL'],
+      technologies: ['Django', 'Next.js'],
       demo: 'https://modelshostesses.com',
+      role: t('projects.roles.fullstack'),
+      featured: true,
+      type: 'manual'
+    },
+    {
+      id: 'cvau',
+      name: 'CVAU Loan Manager',
+      description: t('projects.cvau.description'),
+      category: 'desktop',
+      technologies: ['Python', 'PyQT'],
       role: t('projects.roles.fullstack'),
       featured: true,
       type: 'manual'
     }
   ]
 
-  const projects = [...githubProjects, ...manualProjects]
+  const projects = [...githubProjects, ...manualProjects].sort((a, b) => a.name.localeCompare(b.name));
 
   const categories = [
     { id: 'all', label: t('projects.categories.all') },
@@ -242,104 +218,37 @@ export function Projects() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map((project, index) => (
-            <Card 
-              key={project.id} 
-              className="glass border-primary/20 hover:glow transition-all duration-300 group h-full flex flex-col"
-              style={{
-                animationDelay: `${index * 0.1}s`
-              }}
-            >
-              <CardHeader>
-                <div className="flex items-center justify-between mb-2">
-                  <div className="text-2xl">{getCategoryIcon(project.category)}</div>
-                  {project.featured && (
-                    <Badge variant="secondary" className="text-xs">
-                      Featured
-                    </Badge>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project) => (
+            <Card key={project.id} className="flex flex-col bg-card/50 backdrop-blur-sm border-border/20 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <CardHeader className="flex-row items-start justify-between p-4">
+                <CardTitle className="text-lg font-semibold">{project.name}</CardTitle>
+                <div className="flex gap-3 shrink-0">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <Github className="h-5 w-5" />
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
                   )}
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                  {project.name}
-                </CardTitle>
               </CardHeader>
-              
-              <CardContent className="flex-1 flex flex-col">
-                <p className="text-muted-foreground mb-4 flex-1">
+              <CardContent className="flex-grow flex flex-col p-4 pt-0">
+                <p className="text-muted-foreground text-sm mb-4 leading-relaxed flex-grow">
                   {project.description}
                 </p>
-                
-                <div className="mb-4">
-                  <p className="text-sm text-muted-foreground mb-2">
-                    <strong>{t('projects.role')}:</strong> {project.role}
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge 
-                        key={techIndex} 
-                        variant="outline" 
-                        className="text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-                
+                {/* <p className="text-xs text-muted-foreground italic">
+                  Contributed as {project.role}
+                </p> */}
                 <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.github && (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="flex-1 min-w-[120px] glass hover:glow"
-                      asChild
-                    >
-                      <a 
-                        href={project.github} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="w-4 h-4 mr-2" />
-                        {t('projects.viewCode')}
-                      </a>
-                    </Button>
-                  )}
-                  
-                  {project.demo && (
-                    <Button
-                      size="sm"
-                      className="flex-1 min-w-[120px] hero-gradient text-white"
-                      asChild
-                    >
-                      <a 
-                        href={project.demo} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        {t('projects.liveDemo')}
-                      </a>
-                    </Button>
-                  )}
-
-                  {project.download && (
-                    <Button
-                      size="sm"
-                      variant="secondary"
-                      className="flex-1 min-w-[120px]"
-                      asChild
-                    >
-                      <a 
-                        href={project.download} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        {t('projects.download')}
-                      </a>
-                    </Button>
-                  )}
+                  {project.technologies.map((tech) => (
+                    <Badge key={tech} variant="secondary" className="text-xs font-medium">
+                      {tech}
+                    </Badge>
+                  ))}
                 </div>
               </CardContent>
             </Card>
