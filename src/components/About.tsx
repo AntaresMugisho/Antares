@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useLanguage } from "@/hooks/useLanguage"
-import { Code, Smartphone, Shield, Award } from "lucide-react"
+import { Code, Smartphone, Shield, Award, AppWindow, MonitorSmartphone} from "lucide-react"
 
 export function About() {
   const { t } = useLanguage()
@@ -13,17 +13,17 @@ export function About() {
 
   const experiences = [
     {
-      icon: Code,
+      icon: MonitorSmartphone,
       title: t('about.experiences.0.title'),
       description: t('about.experiences.0.description')
     },
     {
-      icon: Smartphone,
+      icon: AppWindow,
       title: t('about.experiences.1.title'),
       description: t('about.experiences.1.description')
     },
     {
-      icon: Shield,
+      icon: Smartphone,
       title: t('about.experiences.2.title'),
       description: t('about.experiences.2.description')
     }
@@ -62,17 +62,23 @@ export function About() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <Card className="glass border-primary/20">
                 <CardContent className="p-4 text-center">
                   <div className="text-2xl font-bold text-primary">1,036+</div>
-                  <div className="text-sm text-muted-foreground">Contributions</div>
+                  <div className="text-sm text-muted-foreground">Contributions this year</div>
                 </CardContent>
               </Card>
               <Card className="glass border-primary/20">
                 <CardContent className="p-4 text-center">
-                  <div className="text-2xl font-bold text-primary">15+</div>
+                  <div className="text-2xl font-bold text-primary">58+</div>
                   <div className="text-sm text-muted-foreground">Repositories</div>
+                </CardContent>
+              </Card>
+              <Card className="glass border-primary/20 sm:col-span-1">
+                <CardContent className="p-4 text-center">
+                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-sm text-muted-foreground">Years of Experience</div>
                 </CardContent>
               </Card>
             </div>

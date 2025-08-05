@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Mail, Github, Linkedin, Twitter, Globe, MapPin } from "lucide-react"
+import { Mail, Github, Linkedin, Twitter, Globe, MapPin, Phone } from "lucide-react"
 import { useLanguage } from "@/hooks/useLanguage"
 
 export function Contact() {
@@ -10,9 +10,16 @@ export function Contact() {
     {
       icon: Mail,
       label: t('contact.email'),
-      value: 'antaresmugisho@gmail.com',
-      href: 'mailto:antaresmugisho@gmail.com',
+      value: 'hi@antaresmugisho.com',
+      href: 'mailto:hi@antaresmugisho.com',
       color: 'text-red-500'
+    },
+    {
+      icon: Phone,
+      label: t('contact.whatsapp'),
+      value: '+243 97 90 47 269',
+      href: 'tel:+243979047269',
+      color: 'text-green-500'
     },
     {
       icon: Github,
@@ -38,8 +45,8 @@ export function Contact() {
     {
       icon: Globe,
       label: 'Website',
-      value: 'antaresmugisho.vercel.app',
-      href: 'https://antaresmugisho.vercel.app',
+      value: 'www.antaresmugisho.com',
+      href: 'https://www.antaresmugisho.com',
       color: 'text-green-500'
     }
   ]
@@ -91,7 +98,7 @@ export function Contact() {
           <CardContent className="p-6 text-center">
             <MapPin className="w-8 h-8 text-primary mx-auto mb-4" />
             <h3 className="font-semibold text-lg mb-2">Location</h3>
-            <p className="text-muted-foreground">Bujumbura, Burundi</p>
+            <p className="text-muted-foreground">Goma, DR Congo</p>
             <p className="text-sm text-muted-foreground mt-2">Art Revolution Label</p>
           </CardContent>
         </Card>
@@ -110,7 +117,7 @@ export function Contact() {
               className="hero-gradient text-white glow"
               asChild
             >
-              <a href="mailto:antaresmugisho@gmail.com">
+              <a href="mailto:hi@antaresmugisho.com">
                 <Mail className="w-5 h-5 mr-2" />
                 Send Me an Email
               </a>

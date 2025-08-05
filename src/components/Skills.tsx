@@ -7,113 +7,170 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: t('skills.programming'),
-      skills: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'HTML/CSS'],
-      icon: '💻',
-      color: 'from-blue-500 to-purple-500'
+      title: t('skills.frontend'),
+      skills: ['HTML', 'CSS', 'JavaScript', 'Next.js', 'TailwindCSS', 'PyQT', 'PyBlade'],
+      icon: '🎨',
+      darkGradient: 'dark:from-blue-600 dark:to-cyan-600',
+      lightGradient: 'from-blue-400 to-cyan-400',
+      darkHover: 'dark:hover:from-blue-700 dark:hover:to-cyan-700',
+      lightHover: 'hover:from-blue-500 hover:to-cyan-500'
     },
     {
-      title: t('skills.frameworks'),
-      skills: ['React', 'React Native', 'Django', 'Laravel', 'TailwindCSS', 'HTMX', 'Alpine.js', 'Livewire'],
-      icon: '⚡',
-      color: 'from-yellow-500 to-orange-500'
+      title: t('skills.backend'),
+      skills: ['Python', 'Django', 'PHP', 'Laravel'],
+      icon: '⚙️',
+      darkGradient: 'dark:from-purple-600 dark:to-pink-600',
+      lightGradient: 'from-purple-400 to-pink-400',
+      darkHover: 'dark:hover:from-purple-700 dark:hover:to-pink-700',
+      lightHover: 'hover:from-purple-500 hover:to-pink-500'
     },
     {
       title: t('skills.databases'),
-      skills: ['PostgreSQL', 'MySQL', 'SQLite', 'MongoDB'],
-      icon: '🗄️',
-      color: 'from-green-500 to-teal-500'
+      skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQLite', 'Firebase', 'Supabase'],
+      icon: '🗃️',
+      darkGradient: 'dark:from-green-600 dark:to-emerald-600',
+      lightGradient: 'from-green-400 to-emerald-400',
+      darkHover: 'dark:hover:from-green-700 dark:hover:to-emerald-700',
+      lightHover: 'hover:from-green-500 hover:to-emerald-500'
     },
     {
-      title: t('skills.tools'),
-      skills: ['Git', 'Docker', 'Linux', 'Cybersecurity Tools'],
-      icon: '🛠️',
-      color: 'from-red-500 to-pink-500'
-    },
-    {
-      title: t('skills.ai'),
-      skills: ['Machine Learning', 'AI Development', 'Data Analysis'],
-      icon: '🤖',
-      color: 'from-indigo-500 to-purple-500'
+      title: t('skills.devops'),
+      skills: ['Git', 'Docker', 'CI/CD', 'Linux', 'Nginx', 'Cloud Engineering', 'SEO'],
+      icon: '🚀',
+      darkGradient: 'dark:from-orange-600 dark:to-red-600',
+      lightGradient: 'from-orange-400 to-red-400',
+      darkHover: 'dark:hover:from-orange-700 dark:hover:to-red-700',
+      lightHover: 'hover:from-orange-500 hover:to-red-500'
     }
   ]
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20 overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20 dark:bg-muted/10 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gradient mb-4">
             {t('skills.title')}
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             {t('skills.subtitle')}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
           {skillCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="relative group">
-              {/* Central Icon */}
-              <div className="relative flex items-center justify-center mb-8">
-                <div className={`absolute inset-0 rounded-full bg-gradient-to-r ${category.color} opacity-20 blur-xl animate-pulse`}></div>
-                <Card className="relative z-10 w-20 h-20 flex items-center justify-center glass border-primary/30 group-hover:scale-110 transition-all duration-500">
-                  <div className="text-3xl">{category.icon}</div>
-                </Card>
-              </div>
+            <Card 
+              key={categoryIndex}
+              className={`
+                relative group cursor-pointer
+                bg-gradient-to-br ${category.lightGradient} ${category.darkGradient}
+                ${category.lightHover} ${category.darkHover}
+                border-0 shadow-lg hover:shadow-2xl dark:shadow-lg dark:hover:shadow-2xl
+                shadow-black/10 dark:shadow-black/30
+                transform hover:scale-105 transition-all duration-500 ease-out
+                glass backdrop-blur-sm
+                before:absolute before:inset-0 
+                before:bg-white/10 dark:before:bg-black/10 
+                before:rounded-lg
+                hover:before:bg-white/5 dark:hover:before:bg-black/5
+              `}
+              style={{
+                animationDelay: `${categoryIndex * 0.1}s`
+              }}
+            >
+              <CardHeader className="text-center pb-4 relative z-10">
+                {/* Floating Icon with Animation */}
+                <div className="relative mx-auto mb-4">
+                  <div className="absolute inset-0 bg-white/20 dark:bg-white/30 rounded-full blur-xl animate-pulse"></div>
+                  <div className="relative w-16 h-16 mx-auto bg-white/10 dark:bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 dark:border-white/30">
+                    <span className="text-3xl filter drop-shadow-lg">
+                      {category.icon}
+                    </span>
+                  </div>
+                </div>
+                
+                <CardTitle className="text-xl font-bold text-white dark:text-white drop-shadow-lg">
+                  {category.title}
+                </CardTitle>
+              </CardHeader>
 
-              {/* Category Title */}
-              <h3 className="text-center text-xl font-semibold mb-8 text-foreground">
-                {category.title}
-              </h3>
-
-              {/* Circular Skills Layout */}
-              <div className="relative w-80 h-80 mx-auto">
-                {category.skills.map((skill, skillIndex) => {
-                  const angle = (skillIndex * 360) / category.skills.length
-                  const radius = 120
-                  const x = Math.cos((angle - 90) * (Math.PI / 180)) * radius
-                  const y = Math.sin((angle - 90) * (Math.PI / 180)) * radius
-                  
-                  return (
-                    <div
+              <CardContent className="relative z-10">
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {category.skills.map((skill, skillIndex) => (
+                    <Badge 
                       key={skillIndex}
-                      className="absolute transform -translate-x-1/2 -translate-y-1/2 group/skill"
+                      variant="secondary"
+                      className={`
+                        px-3 py-1.5 text-xs font-medium
+                        bg-white/20 hover:bg-white/30 
+                        dark:bg-white/25 dark:hover:bg-white/35 
+                        backdrop-blur-sm
+                        border border-white/30 hover:border-white/50
+                        dark:border-white/40 dark:hover:border-white/60
+                        text-white dark:text-white
+                        transform hover:scale-110 transition-all duration-300
+                        shadow-sm hover:shadow-md
+                        animate-fade-in
+                      `}
                       style={{
-                        left: `50%`,
-                        top: `50%`,
-                        transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                        animationDelay: `${skillIndex * 0.1}s`
+                        animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05)}s`
                       }}
                     >
-                      <Badge 
-                        variant="secondary"
-                        className={`
-                          px-3 py-2 text-xs font-medium whitespace-nowrap
-                          glass border-primary/20 hover:border-primary/40
-                          bg-background/80 hover:bg-background/90
-                          transform hover:scale-110 transition-all duration-300
-                          shadow-lg hover:shadow-primary/20
-                          animate-fade-in
-                          group-hover/skill:animate-pulse
-                        `}
-                      >
-                        {skill}
-                      </Badge>
-                    </div>
-                  )
-                })}
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute top-4 right-4 w-2 h-2 bg-white/30 dark:bg-white/40 rounded-full animate-ping"></div>
+                <div className="absolute bottom-4 left-4 w-1 h-1 bg-white/40 dark:bg-white/50 rounded-full animate-pulse"></div>
+              </CardContent>
+
+              {/* Hover Effect Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent dark:from-black/20 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+            </Card>
+          ))}
+        </div>
+
+        {/* Stats Section */}
+        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
+          {[
+            { number: '7+', label: t('skills.stats.frontend') },
+            { number: '6+', label: t('skills.stats.backend') },
+            { number: '6+', label: t('skills.stats.databases') },
+            { number: '6+', label: t('skills.stats.devops') }
+          ].map((stat, index) => (
+            <div key={index} className="text-center group">
+              <div className="text-3xl md:text-4xl font-bold text-gradient mb-2 group-hover:scale-110 transition-transform duration-300">
+                {stat.number}
+              </div>
+              <div className="text-sm text-muted-foreground uppercase tracking-wide">
+                {stat.label}
               </div>
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Floating Background Elements */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary/30 rounded-full animate-bounce" style={{animationDelay: '0s'}}></div>
-          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-secondary/40 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
-          <div className="absolute top-1/2 left-1/6 w-1.5 h-1.5 bg-accent/30 rounded-full animate-bounce" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-primary/20 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
-        </div>
+      {/* Background Decorative Elements */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute top-3/4 right-1/4 w-40 h-40 bg-gradient-to-r from-green-500/10 to-cyan-500/10 rounded-full blur-3xl animate-float-delayed"></div>
+        <div className="absolute top-1/2 left-1/6 w-24 h-24 bg-gradient-to-r from-orange-500/10 to-red-500/10 rounded-full blur-3xl animate-float-slow"></div>
+        
+        {/* Floating Particles */}
+        {[...Array(6)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-primary/20 rounded-full animate-bounce"
+            style={{
+              top: `${20 + (i * 15)}%`,
+              left: `${10 + (i * 15)}%`,
+              animationDelay: `${i * 0.5}s`,
+              animationDuration: `${2 + (i * 0.5)}s`
+            }}
+          ></div>
+        ))}
       </div>
     </section>
   )

@@ -25,7 +25,7 @@ export function Hero() {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <img
-                src="https://avatars.githubusercontent.com/u/95776501?v=4"
+                src="https://gravatar.com/avatar/de62fbc9ff2e48aaf538d8e74c80b3c57965d7d7ae9c686e3280a5996cf680ab?s=256"
                 alt="Antares Mugisho"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/20 shadow-2xl glow"
               />
@@ -95,7 +95,7 @@ export function Hero() {
               className="h-12 w-12 rounded-full glass hover:glow transition-all duration-300"
               asChild
             >
-              <a href="mailto:antaresmugisho@gmail.com">
+              <a href="mailto:hi@antaresmugisho.com">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>

@@ -15,12 +15,12 @@ const translations = {
       name: "I'm Antares Mugisho",
       title: 'Full-Stack Developer & Cybersecurity Enthusiast',
       description: 'Passionate developer with expertise in software development, web and mobile applications, and cybersecurity. I build innovative solutions to solve real-world problems.',
-      cta: 'View My Work',
-      location: 'Bujumbura, Burundi'
+      cta: 'View my work',
+      location: 'Goma, DR Congo'
     },
     about: {
       title: 'About Me',
-      subtitle: 'Passionate Developer & Security Expert',
+      subtitle: 'Passionate Developer & Cybersecurity Expert',
       bio: 'I am a passionate developer with a diverse skill set spanning software development, web and mobile app development, and cybersecurity. My journey in technology is driven by curiosity and the desire to create innovative solutions that make a difference.',
       experience: 'Professional Experience',
       experiences: [
@@ -34,18 +34,23 @@ const translations = {
         },
         {
           title: 'Mobile App Developer',
-          description: 'Created cross-platform mobile applications with React Native for optimal performance and user experience.'
+          description: 'Created Android and iOS mobile applications with React Native for optimal performance and user experience.'
         }
       ]
     },
     skills: {
       title: 'Skills & Technologies',
       subtitle: 'My Technical Expertise',
-      programming: 'Programming Languages',
-      frameworks: 'Frameworks & Libraries',
+      frontend: 'Frontend',
+      backend: 'Backend',
       databases: 'Databases',
-      tools: 'Tools & Technologies',
-      ai: 'AI & Machine Learning'
+      devops: 'DevOps & Tools',
+      stats: {
+        frontend: 'Frontend',
+        backend: 'Backend',
+        databases: 'Databases',
+        devops: 'DevOps'
+      }
     },
     projects: {
       title: 'Featured Projects',
@@ -118,7 +123,8 @@ const translations = {
       email: 'Email',
       github: 'GitHub',
       linkedin: 'LinkedIn',
-      twitter: 'Twitter'
+      twitter: 'Twitter',
+      whatsapp: 'Whatsapp'
     },
     footer: {
       rights: 'All rights reserved',
@@ -137,12 +143,12 @@ const translations = {
       name: "Je suis Antares Mugisho",
       title: 'Développeur Full-Stack & Passionné de Cybersécurité',
       description: 'Développeur passionné avec une expertise en développement logiciel, applications web et mobiles, et cybersécurité. Je crée des solutions innovantes pour résoudre des problèmes du monde réel.',
-      cta: 'Voir Mon Travail',
-      location: 'Bujumbura, Burundi'
+      cta: 'Voir mes réalisations',
+      location: 'Goma, DR Congo'
     },
     about: {
       title: 'À Propos de Moi',
-      subtitle: 'Développeur Passionné & Expert en Sécurité',
+      subtitle: 'Développeur Passionné & Expert en Cybersécurité',
       bio: 'Je suis un développeur passionné avec un ensemble de compétences diversifiées couvrant le développement logiciel, les applications web et mobiles, et la cybersécurité. Mon parcours en technologie est motivé par la curiosité et le désir de créer des solutions innovantes qui font la différence.',
       experience: 'Expérience Professionnelle',
       experiences: [
@@ -156,18 +162,23 @@ const translations = {
         },
         {
           title: 'Développeur d\'Applications Mobiles',
-          description: 'Création d\'applications mobiles cross-platform avec React Native pour des performances optimales et une expérience utilisateur exceptionnelle.'
+          description: 'Création d\'applications mobiles pour Android et iOS avec React Native pour des performances optimales et une expérience utilisateur exceptionnelle.'
         }
       ]
     },
     skills: {
       title: 'Compétences & Technologies',
       subtitle: 'Mon Expertise Technique',
-      programming: 'Langages de Programmation',
-      frameworks: 'Frameworks & Bibliothèques',
+      frontend: 'Frontend',
+      backend: 'Backend',
       databases: 'Bases de Données',
-      tools: 'Outils & Technologies',
-      ai: 'IA & Apprentissage Automatique'
+      devops: 'DevOps & Outils',
+      stats: {
+        frontend: 'Frontend',
+        backend: 'Backend',
+        databases: 'Bases de Données',
+        devops: 'DevOps'
+      }
     },
     projects: {
       title: 'Projets Sélectionnés',
@@ -240,7 +251,8 @@ const translations = {
       email: 'Email',
       github: 'GitHub',
       linkedin: 'LinkedIn',
-      twitter: 'Twitter'
+      twitter: 'Twitter',
+      whatsapp: "Whatsapp"
     },
     footer: {
       rights: 'Tous droits réservés',
